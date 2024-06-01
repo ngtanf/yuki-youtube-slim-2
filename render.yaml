@@ -1,6 +1,6 @@
 eservices:
   - type: web
-    name: yuki-tango
+    name: yuki-tangolevel
     env: python
     region: Oregon
     plan: free
