@@ -1,6 +1,6 @@
 eservices:
   - type: web
-    name: science-dairatansi-web
+    name: yuki-tango
     env: python
     region: Oregon
     plan: free
