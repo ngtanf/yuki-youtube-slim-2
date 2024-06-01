@@ -1,8 +1,71 @@
 <!DOCTYPE html>
-<>
+<html lang="en">
+<head>
+      <meta charset='utf-8'>
+    <title>ダイラタンシーの作り方</title>
+    <script>function getlevel(){
+        if(document.getElementById('word').value == "yuki"){document.cookie = "yuki=True; path=/;";}else{
+        let req = new XMLHttpRequest();
+        req.addEventListener("load", function(){document.getElementById('info').textContent = this.responseText});
+        req.open("GET", "/answer?q="+document.getElementById('word').value);
+        req.send();}
+    }</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fixed Header</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header h2 {
+    margin: 0; /* 親要素の余白をリセット */
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: inherit; /* 親要素のフォントサイズを継承 */
+    font-weight: inherit; /* 親要素のフォントの太さを継承 */
+    padding: 0; /* ボタンの余白をリセット */
+    margin: 0; /* ボタンと周囲のテキストの間の余白をリセット */
+}
+
+.content {
+    padding-top: 70px; /* ヘッダーの高さ分余白を開ける */
+    background-color: #ffffff;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h2>ダイラ<input type="button" onClick="getlevel()" value="タ" class="button"></input>ンシー</h2>
+</div>
+
+<div class="content">
+  
+</div>
+
+</body>
+</html>
+
 <head>
     <meta charset='utf-8'>
-    <title>英単語レベル</title>
+    <title>ダイラタンシーの作り方</title>
     <script>function getlevel(){
         if(document.getElementById('word').value == "yuki"){document.cookie = "yuki=True; path=/;";}else{
         let req = new XMLHttpRequest();
@@ -11,9 +74,43 @@
         req.send();}
     }</script>
 </head>
-    英単語のレベルを出します。<br>
-    その単語が文脈から判断するべき単語か、覚えておくべき単語かの参考にしてください。<br>
-    <input id="word" type="text"></input><input type="button" onClick="getlevel()">確認</input>
+  
     <div id="info">
-</body>
+
+        <p style="text-align: left"><a style="text-align: left"><span style="color: #000000">
+<span><span style="font-size: large">ダイラタンシーを作る実験</span></span></span></a></p>
+
+        <p style="text-align: left"><b><span style="color: #000000">目的</span></b></p>
+　　　　<br>ダイラタンシー現象とは、物体の内部に力がかかり、液体の状態から固体に変化する現象です。
+        <br>原理としては、物体（本実験では片栗粉を使用）の粒子（小さい粒子）に力が加わると、
+        <br>その微細な粒子が密集して粒子間の隙間が小さくなり、強度が増し固体になります。
+        <br>しかし力を加えるのを止めると再び粒子の隙間が広がり、元の液体へと戻ります。
+        <br>今回の実験により、ダイラタンシー現象を身近な材料から作ることにより、科学の見方を子どもたちに提供します。
+
+        <p style="text-align: left"><b><span style="color: #000000">用意するもの</span></b></p>
+        <br>●片栗粉
+        <br>●水
+　　　　<br>●ボール
+        <p style="text-align: left"><img src="http://www.rs.kagu.tus.ac.jp/~elegance/jikkensp10/clip_image002.jpg" /></p>
+
+　　　　<p style="text-align: left"><b><span style="">実験手順</span></b></p>
+        <br>①片栗粉をボールに入れ、水を加えます。
+　　　　<br>水の量は本実験では片栗粉２に対して水１を使用しました。
+        <br>水を加えたらよくかき混ぜます。
+ 　　　 <br><img src="http://www.rs.kagu.tus.ac.jp/~elegance/jikkensp10/clip_image004.jpg" /><br>
+        <br>②以上でダイラタンシーの出来上がり！非常に簡単です。
+　　　　<br><img src="http://www.rs.kagu.tus.ac.jp/~elegance/jikkensp10/clip_image006.jpg" /><br>
+
+　　　　<p style="text-align: left"><b><span style="">実験方法</span></b></p>
+　　　　<br>出来上がったダイラタンシーは握っている時は固いですが、手を広げると液体に戻っています。
+        <br>ダイラタンシーを握った直後の写真。指の跡が付いているのが分かります。
+        <br><img src="http://www.rs.kagu.tus.ac.jp/~elegance/jikkensp10/clip_image008.jpg"/>
+        <br><br>ダイラタンシーを握ると、握っているときは固まっていますが、握るのをやめると液体に戻ります。
+<br><img src="http://www.rs.kagu.tus.ac.jp/~elegance/jikkensp10/clip_image012.jpg" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="http://www.rs.kagu.tus.ac.jp/~elegance/jikkensp10/clip_image010.jpg" />
+        <br>
+    <input id="word" type="text"></input>
+
+<br> 
+    </body>
 </html>
+  
