@@ -1,4 +1,4 @@
-eservices:
+services:
   - type: web
     name: yuki-tangolevel
     env: python
